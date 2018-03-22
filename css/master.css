@@ -8,7 +8,8 @@ body{
   flex-direction: column;
 }
 .contenedor{
-  width: 800px;
+  width: 100%;
+  max-width: 800px;
   margin: auto;
   position: relative;
 }
@@ -158,7 +159,11 @@ body{
   margin-right: 15px;
 }
 .asunto{
+  width: 100%;
   align-items: flex-start;
+}
+#asunto{
+  width: 100%;
 }
 .asunto .button{
   margin-top: 15px;
@@ -199,8 +204,39 @@ table, td, th{
   border-collapse: collapse;
 }
 @media screen and (max-width: 800px){
-  body{
-    background: peru;
-    border: 10px solid skyblue;
+  .titulo{
+    font-size: 45px;
+    margin-top: 30px;
   }
+  .titulo-a{
+    font-size: 18px;
+  }
+  .textos{
+    height: auto;
+  }
+  .portada .button{
+    display: inline-block;
+    margin-bottom: 30px;
+  }
+  .guitarras{
+    text-align: center;
+  }
+  .guitarra li{
+    list-style: none;
+  }
+  .guitarra.b{
+    height: auto;
+  }
+  .contenedor-guitarra-b{
+    position: static;
+    margin: 0;
+  }
+  .derecha, .izquierda{
+    float: none;
+    position: static;
+  }
+  .title-b{
+    margin: 0;
+  }
+
 }
