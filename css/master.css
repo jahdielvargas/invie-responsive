@@ -198,3 +198,9 @@ table, td, th{
   border: 1px solid #273B47;
   border-collapse: collapse;
 }
+@media screen and (max-width: 800px){
+  body{
+    background: peru;
+    border: 10px solid skyblue;
+  }
+}
