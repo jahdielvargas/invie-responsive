@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Invie - Tus Mejores Guitarras!</title>
+    <link rel="shortcut icon" href="images/shortcut.ico" type="image/x-icon" />
+    <link href="https://fonts.googleapis.com/css?family=Allerta|Montserrat:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/master.css">
+  </head>
+  <body>
+    <section id="portada" class="portada background"><!--  Portada -->
+      <header id="header" class="header contenedor"><!--  Header  -->
+        <figure class="logotipo">
+          <img src="images/invie.png" width="186" height="60" alt="Invie Logotipo">
+        </figure>
+        <nav class="menu"><!-- Menu -->
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#guitarras">Guitarras</a></li>
+            <li><a href="precios.html">Precios</a></li>
+          </ul>
+        </nav>
+      </header>
+      <div class="contenedor textos">
+        <h1 class="titulo">Guitarras <span>invie</span>sibles</h1><!-- Titulo -->
+        <h3 class="titulo-a">Sé la estrella de Rock que siempre quisiste ser</h3><!-- Resumen -->
+        <a class="button" href="#guitarras">Conoce más</a><!-- Boton -->
+      </div>
+    </section>
+    <section id="guitarras" class="guitarras contenedor"><!-- Guitarras -->
+      <h2>Nuestras Guitarras</h2><!-- Titulo -->
+      <article class="guitarra"><!-- Guitarra 1 -->
+        <img class="derecha" src="images/invie-acustica.png" width="350px" alt="Guitarra Invie Acustica">
+        <div class="contenedor-guitarra-a">
+          <h3 class="title-b">Invie Acústica</h3>
+          <ol>
+            <li>Estilo vintage</li>
+            <li>Madera pura</li>
+            <li>Incluye estuche invisible de aluminio</li>
+          </ol>
+        </div>
+      </article>
+      <article class="guitarra b"><!-- Guitarra 2 -->
+        <img class="izquierda" src="images/invie-classic.png" width="350px" alt="Guitarra Invie Classic">
+        <div class="contenedor-guitarra-b">
+          <h3 class="title-b">Invie Classic</h3>
+          <ol>
+            <li>Estilo vintage</li>
+            <li>Liviana</li>
+            <li>Inicia tu camino como Rockstar</li>
+          </ol>
+        </div>
+      </article>
+    </section>
+    <footer class="footer">
+      <div class="contenedor">
+        <div class="contacto">
+          <img src="images/invie-white.png" alt="Logotipo blanco">
+          <a href="tel:+580286600404"><strong>Telefono</strong> <span>0286600404</span> </a>
+          <a href="mailto:contacto@sitio.com"><strong>E-mail</strong> <span>contacto@sitio.com</span> </a>
+        </div>
+        <form class="formulario">
+          <div class="col1">
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre" required>
+            <label for="email">E-mail</label>
+            <input type="text" id="email" name="email" required>
+            <div class="sexo">
+              <label for="mujer">
+                <input type="radio" id="mujer" checked name="sexo"  value="mujer" >Mujer
+              </label>
+              <label for="hombre">
+                <input type="radio" id="hombre" name="sexo" value="hombre">Hombre
+              </label>
+            </div>
+            <div class="intereses">
+              <label for="cotizacion">
+                <input type="checkbox" id="cotizacion" checked name="intereses" value="cotizacion">Cotización
+              </label>
+              <label for="reclamos">
+                <input type="checkbox" id="reclamos" name="intereses" value="reclamos">Reclamos
+              </label>
+              <label for="comentarios">
+                <input type="checkbox" id="comentarios" name="intereses" value="comentarios">Comentarios
+              </label>
+              <label for="otros">
+                <input type="checkbox" id="otros" name="intereses" value="otros">Otros
+              </label>
+            </div>
+          </div>
+          <div class="asunto">
+            <label for="asunto">Asunto</label>
+            <textarea name="asunto" id="asunto" cols="30" rows="7"></textarea>
+            <input type="submit" class="button" value="Enviar">
+          </div>
+        </form>
+      </div>
+    </footer>
+  </body>
+</html>
