@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Precios | Guitarras</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <link rel="shortcut icon" href="images/shortcut.ico" type="image/x-icon" />
     <link href="https://fonts.googleapis.com/css?family=Allerta|Montserrat:400,700" rel="stylesheet">
     <link rel="stylesheet" href="css/master.css">
@@ -11,9 +12,10 @@
     <header id="header" class="header background"><!--  Header  -->
       <div class="contenedor">
         <figure class="logotipo">
-          <img src="images/invie.png" width="186" height="60" alt="Invie Logotipo">
+          <img src="images/invie.png" srcset="images/invie.png 1x, images/invie2x.png 2x" width="186" height="60" alt="Invie Logotipo">
         </figure>
-        <nav class="menu"><!-- Menu -->
+        <span class="burguer-button icon-menu" id="burguer-button"></span>
+        <nav class="menu" id="menu"><!-- Menu -->
           <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="index.html#guitarras">Guitarras</a></li>
@@ -30,6 +32,9 @@
               <th>Modelos</th>
               <th>precios</th>
               <th>Descripción</th>
+              <th>Modelos</th>
+              <th>precios</th>
+              <th>Descripción</th>
             </tr>
           </thead>
           <tbody>
@@ -37,13 +42,22 @@
               <td>Invie Classi</td>
               <td>$2299.00</td>
               <td>Una guitarra muy pro</td>
-            </tr>
-            <tr>
               <td>Invie Classi</td>
               <td>$2299.00</td>
               <td>Una guitarra muy pro</td>
             </tr>
             <tr>
+              <td>Invie Classi</td>
+              <td>$2299.00</td>
+              <td>Una guitarra muy pro</td>
+              <td>Invie Classi</td>
+              <td>$2299.00</td>
+              <td>Una guitarra muy pro</td>
+            </tr>
+            <tr>
+              <td>Invie Classi</td>
+              <td>$2299.00</td>
+              <td>Una guitarra muy pro</td>
               <td>Invie Classi</td>
               <td>$2299.00</td>
               <td>Una guitarra muy pro</td>
@@ -96,5 +110,26 @@
         </form>
       </div>
     </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/blazy/1.8.2/blazy.min.js"></script>
+    <script type="text/javascript">
+      let $burguerButton = document.getElementById('burguer-button')
+      let $menu = document.getElementById('menu');
+      let media = window.matchMedia('(max-width: 500px)')
+      media.addListener(mediaQuerie)
+      function mediaQuerie() {
+        if (media.matches) {
+          $burguerButton.addEventListener('touchstart', toggleMenu)
+        }else {
+          $burguerButton.removeEventListener('touchstart', toggleMenu)
+        }
+      }
+      function toggleMenu() {
+        $menu.classList.toggle('active')
+      }
+      mediaQuerie()
+      let bLazy = new Blazy({
+        selector: "img"
+      })
+    </script>
   </body>
 </html>

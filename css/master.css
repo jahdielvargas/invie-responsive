@@ -249,7 +249,7 @@ th{
   padding: 10px 20px;
 }
 td{
-  padding: 10px;
+  padding: 20px;
 }
 table, td, th{
   border: 1px solid #273B47;
@@ -266,6 +266,7 @@ table, td, th{
   position: absolute;
   left: 20px;
   top: 20px;
+  color: white;
   cursor: pointer;
   z-index: 3;
 }
@@ -303,6 +304,13 @@ table, td, th{
   }
   .title-b{
     margin: 0;
+  }
+  .tabla{
+    margin: 50px 20px;
+  }
+  .tabla .contenedor{
+    overflow: scroll;
+    border: 1px solid #273B47;
   }
 }
 @media screen and (max-width: 767px) {
@@ -363,6 +371,12 @@ table, td, th{
 @media screen and (max-width: 500px) {
   .logotipo{
     display: block;
+  }
+  .header{
+    position: static;
+  }
+  .header .contenedor{
+    position: static;
   }
   .portada .contenedor{
     position: static;
