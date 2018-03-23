@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Invie - Tus Mejores Guitarras!</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <link rel="shortcut icon" href="images/shortcut.ico" type="image/x-icon" />
     <link href="https://fonts.googleapis.com/css?family=Allerta|Montserrat:400,700" rel="stylesheet">
     <!-- <link rel="stylesheet" media="(max-width: 800px)" href="css/media-querie.css"> -->
@@ -101,9 +102,10 @@
     <script type="text/javascript">
       let $burguerButton = document.getElementById('burguer-button')
       let $menu = document.getElementById('menu');
-      $burguerButton.addEventListener('touchstart', () => {
+      $burguerButton.addEventListener('touchstart', toggleMenu)
+      function toggleMenu() {
         $menu.classList.toggle('active')
-      })
+      }
     </script>
   </body>
 </html>
