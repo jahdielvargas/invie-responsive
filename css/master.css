@@ -55,6 +55,7 @@ body{
   position: relative;
 }
 .background{
+  background-color: #466173;
   background-image: url('../images/background.png');
   background-size: cover;
 }
@@ -409,5 +410,10 @@ table, td, th{
   }
   .title-b{
     font-size: 30px;
+  }
+}
+@media screen and (-webkit-min-device-pixel-ratio: 2) {
+  .background{
+    background-image: url('../images/background2x.png');
   }
 }
