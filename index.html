@@ -102,10 +102,19 @@
     <script type="text/javascript">
       let $burguerButton = document.getElementById('burguer-button')
       let $menu = document.getElementById('menu');
-      $burguerButton.addEventListener('touchstart', toggleMenu)
+      let media = window.matchMedia('(max-width: 500px)')
+      media.addListener(mediaQuerie)
+      function mediaQuerie() {
+        if (media.matches) {
+          $burguerButton.addEventListener('touchstart', toggleMenu)
+        }else {
+          $burguerButton.removeEventListener('touchstart', toggleMenu)
+        }
+      }
       function toggleMenu() {
         $menu.classList.toggle('active')
       }
+      mediaQuerie()
     </script>
   </body>
 </html>
